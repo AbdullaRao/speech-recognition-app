@@ -1,0 +1,73 @@
+/* Dark mode styling */
+body {
+    background-color: #121212;
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Centered speech box */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+/* Speech recognition box */
+.speech-box {
+    background: #1e1e1e;
+    padding: 40px 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 350px;
+    min-height: 100px;
+}
+
+/* Microphone button */
+.mic-button {
+    background-color: #8d8d8d;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, background 0.3s;
+    margin-bottom: 10px;
+}
+
+.mic-button:hover {
+    background-color: #00bebe;
+    transform: scale(1.1);
+}
+
+/* Disabled mic button */
+.mic-button.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Listening text */
+.listening-text {
+    color: #00bebe;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+/* Transcribed text */
+.transcribed-text {
+    margin-top: 15px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #eeeeee;
+}
+
+/* Error text */
+.error-text {
+    color: #ff4d4d;
+    font-size: 1.2em;
+}
